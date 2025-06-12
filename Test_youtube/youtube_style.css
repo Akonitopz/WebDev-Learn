@@ -1,51 +1,48 @@
 p{
-  font-family: Roboto, Arial;
+  font-family: Roboto, Arial, sans-serif;
   margin-top: 0px;
-  margin-bottom: 0px;
-}
+  margin-bottom: 0px;}
 
-.video-preview1{
-  vertical-align: top;
-  display: inline-block;
-  width: 300px;
-}
+div{
+  margin-top: 0px;}
 
-.search-bar{
-  vertical-align: top;
-}
+.content{
+  display: grid;
+  grid-template-columns: 1fr 1fr;}
 
-.thumbnail-1{
-width: 300px;
-margin-bottom: 10px;
-}
+.video-preview{
+  width: 300px;}
 
-.channel-image1{
-  display: inline-block;
-  width: 50px;
-  vertical-align: top;
-}
+.thumbnail{
+  width: 300px;}
 
-.video-info1{
-  display: inline-block;
-  width: 200px;
-}
+.video-info-grid{
+    display: grid;
+    grid-template-columns: 50px 1fr;}
 
-.profile-pic1{
-  width: 100%;
-  border-radius: 40px;
-}
+.channel-image{
+  margin-top: 8px;}
+  
+.image{
+  width: 36px;
+  border-radius: 40px;}
+
+.video-info{
+  margin-top: 8px;}
 
 .title{
-  margin-top: 0;
-  font-weight: 500;
   font-size: 14px;
-  line-height: 20px;
+  font-weight: 500;
+  margin-bottom: 10px;}
+
+.user-name, .info{
+  font-size: 12px;
+  color: rgb(96, 96, 96);
+}
+
+.info{
+  margin-top: 4px;
   margin-bottom: 12px;
 }
 
-.user-name, .video-info{
-  font-size: 12px;
-  color: rgb(96, 96, 96);
-  margin-bottom: 4px;
-}
 
