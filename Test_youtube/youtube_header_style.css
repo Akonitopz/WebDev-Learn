@@ -1,28 +1,42 @@
 .header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
   height: 56px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  margin-bottom: 20px;
+  padding: 0 16px;
+  overflow: hidden;
+  background-color: white;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-bottom-color: rgb(230, 230, 230);
+  z-index: 100;
+
 }
 
 .left-section{
   display: flex;
   align-items: center;}
 
-.mid-section{
+.mid-section {
   display: flex;
   align-items: center;
   flex: 1;
+  margin: 0 20px;
   max-width: 500px;
-  margin-left: 70px;
-  margin-right: 35px;}
+  min-width: 0;}
 
 .right-section{
   display: flex;
   align-items: center;
-  justify-content: end;
-  background-color: lightgreen;
-  width: 300px;}
+  justify-content: space-between;
+  width: 180px;
+  margin-right: 20px;
+  flex-shrink: 0;}
 
 .hamburger-menu{
   height: 24px;
@@ -41,7 +55,8 @@
     border-style: solid;
     border-radius: 2px;
     border-color: rgb(192, 192, 192);
-    box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.09);}
+    box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.09);
+    width: 0;}
 
 .search-bar::placeholder{
   font-family: Roboto, Arial;
@@ -55,7 +70,7 @@
   border-width: 1px;
   border-color: rgb(192, 192, 192);
   margin-left: -1px;
-  margin-right: 10px;}
+  margin-right: 8px;}
 
 .voice-search-button{
   height: 40px;
@@ -73,10 +88,38 @@
   margin-top: 4px;}
 
 .upload-icon{
-  height: 20px;}
+  height: 24px;}
 
 .youtube-apps{
-  height: 20px;}
+  height: 24px;}
+
+.notification{
+  height: 24px;
+}
 
 .user-profile-image{
-  height: 20px;}
+  height: 32px;
+  border-radius: 16px;}
+
+.mid-section, .left-section, .right-section {
+  min-width: 0;
+}
+
+.notification-div{
+  position: relative;}
+
+
+.notification-number{
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  background-color: red;
+  color: white;
+  font-family: Roboto, Arial;
+  font-size: 12px;
+  padding-left: 6px;
+  padding-right: 6px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  border-radius: 10px;
+}

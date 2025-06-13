@@ -4,10 +4,10 @@ p{
   margin-bottom: 0px;}
 
 body{
-  margin-top: 0px;
-  margin-bottom: 0px;
-  margin-left: 0px;
-  margin-right: 0px;}
+  margin: 0;
+  padding-top: 80px;
+  padding-left: 100px;
+  height: 3000px;}
 
 div{
   margin-top: 0px;
@@ -19,6 +19,9 @@ div{
 
 .video-preview{
   width: 300px;}
+
+.thumbnail-main{
+  position: relative;}
 
 .thumbnail{
   width: 300px;}
@@ -51,5 +54,15 @@ div{
   margin-top: 4px;
   margin-bottom: 12px;
 }
+
+.video-time{
+  font-family: Roboto, Arial;
+  font-size: 14px;
+  font-weight: 500;
+  background-color: black;
+  color: white;
+  position: absolute;
+  bottom: 8px;
+  right: 5px;}
 
 
