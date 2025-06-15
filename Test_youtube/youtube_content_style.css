@@ -23,6 +23,16 @@ div{
 .thumbnail-main{
   position: relative;}
 
+.video-time{
+  font-family: Roboto, Arial;
+  font-size: 14px;
+  font-weight: 500;
+  background-color: black;
+  color: white;
+  position: absolute;
+  bottom: 8px;
+  right: 5px;}
+
 .thumbnail{
   width: 300px;}
 
@@ -54,15 +64,5 @@ div{
   margin-top: 4px;
   margin-bottom: 12px;
 }
-
-.video-time{
-  font-family: Roboto, Arial;
-  font-size: 14px;
-  font-weight: 500;
-  background-color: black;
-  color: white;
-  position: absolute;
-  bottom: 8px;
-  right: 5px;}
 
 
