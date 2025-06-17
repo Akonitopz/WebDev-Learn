@@ -6,8 +6,10 @@ p{
 body{
   margin: 0;
   padding-top: 80px;
-  padding-left: 100px;
-  height: 3000px;}
+  padding-left: 96px;
+  height: 3000px;
+  padding-right: 24px;
+  background-color: #F9F9F9;}
 
 div{
   margin-top: 0px;
@@ -15,10 +17,24 @@ div{
 
 .content{
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;}
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 20px;
+  row-gap: 40px;}
+
+@media (max-width: 1000px){
+  .content{
+  grid-template-columns: 1fr 1fr 1fr;}}
+
+@media (max-width: 730px){
+  .content{
+  grid-template-columns: 1fr 1fr;}}
+
+@media (max-width: 500px){
+  .content{
+  grid-template-columns: 1fr;}}
 
 .video-preview{
-  width: 300px;}
+  width: 100%;}
 
 .thumbnail-main{
   position: relative;}
@@ -34,14 +50,15 @@ div{
   right: 5px;}
 
 .thumbnail{
-  width: 300px;}
+  width: 100%;}
 
 .video-info-grid{
     display: grid;
     grid-template-columns: 50px 1fr;}
 
 .channel-image{
-  margin-top: 8px;}
+  margin-top: 8px;
+  width: 36px;}
   
 .image{
   width: 36px;
