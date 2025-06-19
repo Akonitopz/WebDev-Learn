@@ -1,0 +1,16 @@
+body{
+  margin: 0;}
+
+p{
+  margin: 0;
+  font-family: Roboto, Arial;
+}
+
+.wrapper-outer{
+  background-color: #1F1B4F;
+  position: relative;
+  width: 100%;
+  height: 1000px;
+  background-attachment: scroll;}
+
+

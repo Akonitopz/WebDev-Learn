@@ -1,0 +1,9 @@
+.separator-div{
+  background-color: white;
+  position: absolute;
+  top: 263px;
+  height: 21px;
+  left: 61px;
+  right: 61px;
+  border-radius: 5px;
+}
