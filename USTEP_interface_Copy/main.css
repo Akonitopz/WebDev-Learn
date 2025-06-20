@@ -1,9 +1,15 @@
 body{
-  margin: 0;}
+  margin: 0;
+  font-family: Open Sans, sans-serif;
+}
 
 p{
   margin: 0;
   font-family: Roboto, Arial;
+}
+
+h2{
+  margin: 0;
 }
 
 .wrapper-outer{
