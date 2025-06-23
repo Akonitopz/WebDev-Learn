@@ -1,5 +1,5 @@
 .socials{
-  padding: 7px 15px 7px 15px;}
+  padding: 7px 15px 7px 35px;}
 
 .socials-row{
   display: flex;
@@ -12,7 +12,7 @@
   
 .social-icons{
   flex: 1;
-  padding: 0px 15px 0px 15px;
+  padding: 0px 50px 0px 50px;
   justify-content: end;}
 
 .links{
