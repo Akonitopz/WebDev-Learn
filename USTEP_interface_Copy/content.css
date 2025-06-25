@@ -12,7 +12,7 @@
   background-color: white;
   position: absolute;
   top: 284px;
-  height: 3000px;
+  height: 2750px;
   left: 61px;
   right: 61px;
   border-radius: 3px;
@@ -30,9 +30,7 @@
 
 .jumbotron-1{
   border-radius: 3px;
-  border-color: red;
-  border-width: 2px;
-  border-style: solid;
+  background-color: rgb(233, 236, 239);
   margin-bottom: 28px;
   padding: 56px 28px 56px 28px;
   margin-bottom: 28px;
@@ -40,7 +38,7 @@
 
 .jumbotron-1 strong{
   font-size: 49px;
-  font-weight: 900;
+  font-weight: 700;
   margin-bottom: 7px;
 }
 
@@ -297,4 +295,79 @@
   content: "\2699";
   font-size: 50px;
   color: #FAB417;
+}
+
+.bottom-card-container{
+  padding: 14px 14px 14px 14px;
+}
+
+.activity-wrapper{
+  margin-top: 4px;
+  padding-top: 4px;
+  list-style: none;
+}
+
+.activity-inline{
+  padding: 10px 0px 10px 0px;
+}
+
+.d-flex-align-items-center{
+  display: flex;
+  align-items: center;
+}
+
+.d-flex-align-items-center .description{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container-fluid{
+  margin-top: 42px;
+  margin-bottom: 42px;
+}
+
+.row{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.row .column-4{
+  padding: 0px 15px 0px 15px;
+  flex: 1;
+}
+
+.icon-box{
+  display: flex;
+  margin-top: 7px;
+  margin-bottom: 7px;
+  padding: 14px 14px 14px 14px;
+  background-color: #FDF6E4;
+}
+
+.icon-wrapper{
+  display: flex;
+  margin: 14px 14px 0px 0px;
+}
+
+.icon-content h5{
+  font-size: 17px;
+}
+
+.icon-content p{
+  font-size: 14px;
+}
+
+.footer-section{
+  position: absolute;
+  bottom: 34px;
+  left: 65px;
+}
+
+.footer-container a{
+  display: flex;
+  flex-direction: column;
+  color: white;
+  font-size: 14px;
 }
