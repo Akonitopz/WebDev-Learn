@@ -121,7 +121,11 @@
   align-items: center;}
 
 .menu-div img{
-  height: 45px;}
+  height: 40px;
+  padding-top: 9px;
+  padding-bottom: 9px;
+  overflow: hidden;
+}
 
 .menu-div p{
   padding: 0px 10px 0px 10px;

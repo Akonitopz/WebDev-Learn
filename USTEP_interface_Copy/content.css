@@ -27,7 +27,6 @@
   padding: 14px 14px 14px 14px;
 }
 
-
 .jumbotron-1{
   border-radius: 3px;
   background-color: rgb(233, 236, 239);
@@ -55,52 +54,14 @@
   margin-bottom: 21px;
 }
 
-/* style for the image slider */
-
-.slider-wrapper{
-  position: relative;
-  max-width: 100%;
-  margin: 0 auto;
+.para-4{
+  color: #FAB417;
+  transition: all ease-in-out 0.15s;
 }
 
-.slider{
-  display: flex;
-  aspect-ratio: 16/9;
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
-  scroll-behavior: smooth;
-  box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25); 
-  border-radius: 0.5rem;
-  margin-bottom: 22px;
-}
-
-.slider img{
-  flex:  1 0 100%;
-  scroll-snap-align: start;
-  object-fit: cover;
-}
-
-.navigator{
-  display: flex;
-  column-gap: 1rem;
-  position: absolute;
-  bottom: 1.5rem;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 1; 
-}
-
-.navigator a{
-    border: none;
-    font-size: 100px;
-    color: white;
-    background-color: black;
-    opacity: 0.75;
-    transition: opacity ease 250ms;
-}
-
-.navigator a:hover{
-  opacity: 1;
+.para-4:hover{
+  cursor: pointer;
+  color: black;
 }
 
 /* courses contents in here */

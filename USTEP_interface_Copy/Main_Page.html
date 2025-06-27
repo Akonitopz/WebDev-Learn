@@ -5,6 +5,7 @@
       <link rel="stylesheet" href="main.css">
       <link rel="stylesheet" href="header.css">
       <link rel="stylesheet" href="content.css">
+      <link rel="stylesheet" href="effects.css">
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -48,11 +49,11 @@
       <header class="lower-header">
         <nav class="nav-bar">
           <div class="menu-div">
-            <img src="icons/Home-icon2.png">
-            <p>Dashboard</p>
-            <p>My Courses</p>
-            <p>Pages &#9660;</p>
-            <p>Categories &#9660;</p>
+            <img src="icons/Home-icon2.png" class="home-icon">
+            <p class="dashboard">Dashboard</p>
+            <p class="my-courses">My Courses</p>
+            <p class="pages">Pages &#9660;</p>
+            <p class="categories">Categories &#9660;</p>
           </div>
           <div class="search-icon-div">
             <img src="icons/share-icon.png">
@@ -76,17 +77,17 @@
               <p class="para-4">More......</p>
             </div>
              <!--This section is for te slide show for jumbotron-->
-            <div class="slider-wrapper">
-              <div class="slider">
-                  <img src="images/image_1.jpg" id="slide-1">
-                  <img src="images/image_2.jpg" id="slide-2">
+      
+              <div class="slider-container">
+                <div class="slider">
+                  <img src="images/image_1.jpg" class="slide active" />
+                  <img src="images/image_2.jpg" class="slide" />
+                  <img src="images/image_3.jpg" class="slide">
+                </div>
+                <button class="nav left" onclick="changeSlide(-1)">&#10094;</button>
+                <button class="nav right" onclick="changeSlide(1)">&#10095;</button>
               </div>
-              <!--Navigation div-->
-              <div class="navigator">
-                  <a href="#slide-1"> &lt; </a>
-                  <a href="#slide-2"> &gt; </a>
-              </div>
-            </div>
+       
           </div>
               <div class="courses-section">
                 <h2>My Courses</h2></div>
@@ -253,5 +254,25 @@
   </div>
 
     </div>
+
+  <!-------This is for the Javascript section-------->
+    <script>
+      let currentSlide = 0;
+      const slides = document.querySelectorAll('.slide');
+
+      function showSlide(index) {
+        slides.forEach((slide, i) => {
+          slide.classList.remove('active');
+          if (i === index) slide.classList.add('active');
+        });
+      }
+
+      function changeSlide(direction) {
+        currentSlide += direction;
+        if (currentSlide < 0) currentSlide = slides.length - 1;
+        if (currentSlide >= slides.length) currentSlide = 0;
+        showSlide(currentSlide);
+      }
+    </script>
   </body>
 </html>
