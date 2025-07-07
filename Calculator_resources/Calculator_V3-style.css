@@ -127,6 +127,30 @@ input.style-inputBox{
   color: white;
 }
 
+.calculator-button button, 
+.calculator-button-operator button, 
+.ac-button button, 
+.zero-button button{
+  transition: all ease 250ms;
+}
+
+.calculator-button button:hover, 
+.calculator-button-operator button:hover, 
+.ac-button button:hover, 
+.zero-button button:hover{
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+.calculator-button button:active, 
+.calculator-button-operator button:active, 
+.ac-button button:active, 
+.zero-button button:active{
+  border: 1px;
+  border-style: solid;
+  border-color: #f7a625;
+}
+
 
 
 
